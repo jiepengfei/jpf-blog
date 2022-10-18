@@ -133,3 +133,30 @@ window.addEventListener('setItem', function (e) {             document.querySele
 ```js
 structuredClone() // 兼容一般
 ```
+
+##### 在对象中使用运算符
+
+```js
+{
+    others,
+    ...(yes === 2
+        ? {
+            bonus,
+          }
+        : {
+            other,
+        }),
+}
+```
+
+##### 对象属性跟随变量切换
+{
+    [item === 1 ? 'name' : 'names'] : value,
+}
+
+##### 兼容replaceAll
+
+```js
+replaceAll只兼容到谷歌85版本。
+可使用replace(/str1/g, str2)代替
+```
