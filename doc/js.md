@@ -160,3 +160,6 @@ structuredClone() // 兼容一般
 replaceAll只兼容到谷歌85版本。
 可使用replace(/str1/g, str2)代替
 ```
+
+判断2的倍数
+return num & num - 1 === 0;
